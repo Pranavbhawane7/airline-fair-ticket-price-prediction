@@ -1,11 +1,15 @@
-﻿# airline-fair-ticket-price-prediction
-✈️ Airline Fare Ticket Price Prediction
-📌 Introduction
-This project focuses on predicting airline ticket fares using machine learning. By analyzing flight details such as airline, source, destination, departure/arrival times, and duration, the model learns pricing patterns and provides accurate predictions.
+##Airline Fare Ticket Price Prediction
+
+---
+
+##Introduction
+This project predicts airline ticket fares using machine learning. By analyzing flight details such as airline, source, destination, departure/arrival times, and duration, the model learns pricing patterns and provides accurate predictions.
 
 The notebook prediction.ipynb contains the complete workflow: data preprocessing, exploratory data analysis (EDA), feature engineering, model building, evaluation, and saving the trained model.
 
-Dataset
+---
+
+##Dataset
 Features included:
 
 Airline
@@ -30,7 +34,19 @@ Encoded categorical variables
 
 Extracted new features (day, month, etc.)
 
+---
+
+##Workflow
+Data Preprocessing
+
+Cleaned dataset, handled missing values, dropped irrelevant columns.
+
+Applied encoding to categorical variables.
+
+Extracted new features from date/time columns.
+
 Exploratory Data Analysis
+
 Distribution plots showed skewness in ticket prices.
 
 Boxplots revealed outliers (above ₹40,000).
@@ -40,13 +56,8 @@ Outliers handled using the Interquartile Range (IQR) method.
 Correlation analysis identified key features influencing price.
 
 Model Building
-Models applied:
 
-Linear Regression
-
-Decision Tree
-
-Random Forest
+Models applied: Linear Regression, Decision Tree, Random Forest.
 
 Hyperparameter tuning with RandomizedSearchCV.
 
@@ -61,44 +72,29 @@ min_samples_split=15
 max_features='sqrt'
 
 Evaluation
-Metrics used:
 
-Mean Absolute Percentage Error (MAPE)
-
-Mean Absolute Error (MAE)
-
-Root Mean Squared Error (RMSE)
-
-R² Score
+Metrics used: MAPE, MAE, RMSE, R².
 
 Random Forest achieved the best performance with ~12–15% average error.
 
 Feature importance: Airline, Duration, and Source/Destination were the most influential.
 
-How to Run
-Clone the repository:
-
-bash
-git clone https://github.com/Pranavbhawane7/airline-fair-ticket-price-prediction.git
-Navigate to the folder:
-
-bash
-cd airline-fair-ticket-price-prediction
-Install dependencies:
-
-bash
-pip install -r requirements.txt
-Open the notebook:
-
-bash
-jupyter notebook prediction.ipynb
-
 Model Saving
-The final trained model is saved using pickle for reuse:
 
-python
-import pickle
-with open("best_rf_model.pkl", "wb") as f:
-    pickle.dump(best_model, f)
-Conclusion
-The project demonstrates how machine learning can be applied to predict airline ticket fares. With proper preprocessing, feature engineering, and hyperparameter tuning, Random Forest provided strong predictive accuracy.
+Final trained model saved using pickle for reuse.
+
+---
+
+##Results
+Random Forest achieved the best predictive accuracy among tested models.
+
+Average error (MAPE) ~12–15%.
+
+Airline, Duration, and Source/Destination were the most important features.
+
+Outliers were successfully handled using the IQR method.
+
+---
+
+##Conclusion
+The project demonstrates how machine learning can be applied to predict airline ticket fares. With proper preprocessing, feature engineering, and hyperparameter tuning, Random Forest provided strong predictive accuracy. 
