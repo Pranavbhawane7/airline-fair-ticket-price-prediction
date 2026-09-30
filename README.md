@@ -57,6 +57,13 @@ The notebook `prediction.ipynb` contains the complete workflow: data preprocessi
 
 ## 🔎Findings
 -  Distribution of flight departures across different times of the day- <img width="752" height="528" alt="image" src="https://github.com/user-attachments/assets/722b5b72-07b7-4f1c-8ca1-4c77d6ac54ed" />
+- Relationship between flight duration (in minutes) and ticket price- <img width="632" height="457" alt="image" src="https://github.com/user-attachments/assets/0df16770-0d8c-404b-8227-27db4c212f93" /> - Observations - Positive correlation: As Duration_total_mins increases, the Price generally increases too. Longer flights tend to cost more.
+- it shows flight duration vs ticket price, categorized by number of stops - <img width="635" height="427" alt="image" src="https://github.com/user-attachments/assets/cb4d8d8f-4e4d-4ff4-97ec-ec3a7c8b53ad" /> - Observations -
+- Non‑stop flights (blue) → Shorter durations, generally lower prices. These are direct routes, so they’re faster and often cheaper for domestic travel.
+- 1 stop (green) → Moderate durations, prices spread wider. Connecting flights can sometimes be cheaper but often take longer.
+- 2+ stops (orange, red, purple) → Much longer durations, with prices ranging widely. These flights are less convenient, and while some are cheaper, others can be surprisingly expensive depending on airline and route.
+- Trend → More stops usually mean longer travel time, but not always lower price. Airlines may price connecting flights differently depending on demand and route availability.
+
 
 ---
 
