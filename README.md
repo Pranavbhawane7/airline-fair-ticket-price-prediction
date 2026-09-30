@@ -55,6 +55,11 @@ The notebook `prediction.ipynb` contains the complete workflow: data preprocessi
 
 ---
 
+## 🔎Findings
+-  Distribution of flight departures across different times of the day- <img width="752" height="528" alt="image" src="https://github.com/user-attachments/assets/722b5b72-07b7-4f1c-8ca1-4c77d6ac54ed" />
+
+---
+
 ## 📈 Results
 - Random Forest achieved the best predictive accuracy among tested models.  
 - Average error (MAPE) ~12–15%.  
